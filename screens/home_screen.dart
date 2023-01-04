@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
       isRunning = false;
     });
   }
-'''
+```
   void onResetPressed() {
     timer.cancel();
     setState(() {
@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
       totalSeconds = twentyFiveMinutes;
     });
   }
-'''
+```
   String format(int seconds) {
     var duration = Duration(seconds: seconds);
     return duration.toString().split(".").first.substring(2, 7);
